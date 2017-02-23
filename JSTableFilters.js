@@ -98,8 +98,6 @@ $( document ).ready(function() {
         }
     });
 
-    $(".table1").jSTableFilters();
-
     $(".columnFilter").change(function() {
         var options = $(this).find(":selected").text();
         var table = $(this).closest( "table.JSTableFilter" )[0]
