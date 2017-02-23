@@ -2,6 +2,10 @@
 
 Simple JS script to add drop down filters into the table headers.
 
+# Dependencies:
+
+Require JQuery library.
+
 # Usage
 
 Just include JSTableFilters.js into your project and add
