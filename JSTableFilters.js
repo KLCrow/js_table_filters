@@ -26,15 +26,15 @@ $( document ).ready(function() {
         column.appendChild(s);
 
         var o = document.createElement( "option" );
-        o.text = "All"
-        o.selected = "selected"
+        o.text = "All";
+        o.selected = "selected";
         s.appendChild(o);
 
 
-        var rows = $(table).find( "tr" )
+        var rows = $(table).find( "tr" );
         var options = [];
         rows.each(function(rowIndex, row){
-            var cell = $(row).find( "td" )[columnIndex]
+            var cell = $(row).find( "td" )[columnIndex];
             if (cell === undefined) {
                 return true;
             };
@@ -98,7 +98,7 @@ $( document ).ready(function() {
         }
     });
 
-    $(".columnFilter").change(function() {
+    $("body").on('change', '.columnFilter', function () {
         var options = $(this).find(":selected").text();
         var table = $(this).closest( "table.JSTableFilter" )[0]
         var columnIndex = parseInt(this.id.match(/\d+/)[0]);
@@ -126,5 +126,4 @@ $( document ).ready(function() {
             };
         });
     });
-
 });
