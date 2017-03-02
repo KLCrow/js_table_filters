@@ -8,20 +8,50 @@ Require JQuery library.
 
 # Usage
 
+## Table
+
+    <table class="table1" border="1" width="100%" cellpadding="5">
+       <tr>
+        <th>header1</th>
+        <th>header2</th>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>context1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>context2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>context1</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>context3</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>context5</td>
+      </tr>
+     </table>
+
+## Usage script
+
 Just include JSTableFilters.js into your project and add
 
     $(".table1").jSTableFilters();
 
 or
 
-    $(".table2").jSTableFilters({
+    $(".table1").jSTableFilters({
         columns: [0,1]
     });
 
 or
 
-    $(".table3").jSTableFilters({
+    $(".table1").jSTableFilters({
         columns: [1]
     });
 
-to your script ("table1", "table2" and "table3" - tables selectors).
